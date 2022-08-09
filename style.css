@@ -462,6 +462,7 @@ header {
 }
 
 header > img {
+  max-width: 100%;
   position: absolute;
   /* background-repeat: no-repeat; */
   box-sizing: border-box;
