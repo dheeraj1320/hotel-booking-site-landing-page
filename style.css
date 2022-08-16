@@ -463,9 +463,10 @@ header {
 
 header > img {
   max-width: 100%;
+  height: max-content;
   position: absolute;
   /* background-repeat: no-repeat; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* width: 95%; */
   z-index: -1;
 }
