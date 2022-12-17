@@ -128,7 +128,7 @@ a:hover {
 }
 
 .logo {
-  height: 40px;
+  height: 60px;
 }
 
 /* Header */
@@ -242,6 +242,7 @@ form div {
 }
 
 /* Footer */
+
 .socials {
   width: 8rem;
   margin-top: 40px;
@@ -251,5 +252,8 @@ i {
   color: rgb(100, 100, 100);
 }
 
-/* footer {
-} */
+footer {
+  margin: auto;
+  margin-top: 10rem;
+  font-size: small;
+}
