@@ -1,6 +1,6 @@
 @media (max-width: 1199px) {
   .container_wrapper {
-    background-color: green;
+    /* background-color: green; */
     margin: 0 5%;
   }
 }
@@ -21,7 +21,7 @@
   }
 
   .container_wrapper {
-    background-color: blue;
+    /* background-color: blue; */
     margin: 0 2%;
   }
 
@@ -46,10 +46,9 @@
     width: 55px;
   }
 
-  .container_wrapper {
-    /* transform: translateY(-10%); */
+  /* .container_wrapper {
     background-color: red;
-  }
+  } */
 
   form div {
     width: 70% !important;
@@ -137,10 +136,9 @@
 }
 
 @media (max-width: 625px) {
-  .container_wrapper {
-    /* transform: translateY(-10%); */
+  /* .container_wrapper {
     background-color: pink;
-  }
+  } */
 
   form div {
     width: 100% !important;

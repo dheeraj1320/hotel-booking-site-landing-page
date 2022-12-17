@@ -21,7 +21,6 @@ const toggleNavColor = () => {
 navBtn.addEventListener("click", toggleNavColor);
 
 window.onscroll = function () {
-  console.log(document.body.scrollTop, document.documentElement.scrollTop);
   if (
     document.body.scrollTop >= 150 ||
     document.documentElement.scrollTop >= 150
