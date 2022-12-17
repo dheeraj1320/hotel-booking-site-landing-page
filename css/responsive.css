@@ -1,0 +1,148 @@
+@media (max-width: 1199px) {
+  .container_wrapper {
+    background-color: green;
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Navbar */
+  .navbar-toggler {
+    border: 3px solid var(--color-body);
+  }
+
+  /* Header */
+  .greeting2 {
+    font-size: 4rem;
+  }
+
+  .curve {
+    width: 75px;
+  }
+
+  .container_wrapper {
+    background-color: blue;
+    margin: 0 2%;
+  }
+
+  /* Footer */
+}
+
+@media (max-width: 767px) {
+  /* Header */
+  /* header {
+    transform: translateY(-25%);
+  } */
+
+  .greeting1 {
+    font-size: 1.25rem;
+  }
+
+  .greeting2 {
+    font-size: 3rem;
+  }
+
+  .curve {
+    width: 55px;
+  }
+
+  .container_wrapper {
+    /* transform: translateY(-10%); */
+    background-color: red;
+  }
+
+  form div {
+    width: 70% !important;
+    margin-bottom: 5px;
+  }
+
+  input[type="date"] {
+    width: 100%;
+  }
+
+  input[type="number"] {
+    display: inline;
+    width: 40%;
+  }
+
+  /* Details */
+  .sofaContainer div,
+  .sofaContainer img,
+  .bedContainer div,
+  .bedContainer img,
+  .locationContainer img,
+  .locationContainer div {
+    width: 100%;
+  }
+
+  .bedContainer div {
+    order: 1;
+  }
+
+  .bedContainer img {
+    order: 2;
+    border-bottom-right-radius: 10px;
+  }
+
+  .locationContainer img {
+    order: 2;
+    border-radius: 0px;
+  }
+
+  .locationContainer div {
+    order: 1;
+    border-top-left-radius: 10px;
+  }
+
+  /* Review */
+  .reviewContainer {
+    border-radius: 0;
+  }
+
+  .reviewContainer > div {
+    border-bottom-left-radius: 10px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: calc(20rem + 100vw - 320px);
+  }
+
+  .footer .line {
+    margin: 0.5rem auto !important;
+  }
+
+  .footer p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer > div {
+    margin-top: 2.5rem;
+  }
+
+  .footer input {
+    margin-top: 0.5rem;
+  }
+
+  .footer > div > a {
+    display: block;
+    text-align: center;
+  }
+
+  .socials {
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 625px) {
+  .container_wrapper {
+    /* transform: translateY(-10%); */
+    background-color: pink;
+  }
+
+  form div {
+    width: 100% !important;
+  }
+}

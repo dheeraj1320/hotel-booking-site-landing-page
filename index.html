@@ -1,190 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Booking static site</title>
-    <link rel="stylesheet" href="oldStyle.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul class="font1 center">
-          <li><a href="#greet1">Home</a></li>
-          <li><a href="#greet"> Book Now</a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#Location"> Location</a></li>
-          <li><a href="#review"> Our Review</a></li>
-          <li><a href="#end"> About Us</a></li>
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Booking static site</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body data-bs-target="#navbarNav">
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg  fixed-top   ">
+    <div class="container flex">
+      <a class="navbar-brand mx-lg-auto mb-lg-4 mt-2" href="#home">
+        <img src="./images/logo.jpg" alt="logo" class="logo">
+
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav mx-auto flex-lg-row text-lg-center ">
+          <li class="nav-item">
+            <a class="nav-link text-center font1" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center font1" href="#bookNow">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center font1" href="#details">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center font1" href="#location">Location</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-center font1" href="#review">Our Review</a>
+          </li>
+
+
         </ul>
-      </nav>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
 
-      <img src="images/background.jpg" />
 
-      <section class="greet">
-        <div>
-          <img
-            src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_75,h_7,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
-          />
 
-          <span>BE OUR GUEST</span>
+  <!-- Video -->
+  <div class="videoBox">
+    <video autoPlay loop muted id='video'>
+      <source src="images/maldivesVideo.mp4" type='video/mp4' />
+    </video>
+  </div>
 
-          <img
-            src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_75,h_7,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
-          />
+  <header id="home"
+    class="d-flex flex-column justify-content-center align-items-center w-100 h-100 position-absolute top-0 ">
+
+
+    <div class="d-flex justify-content-center align-items-center h3">
+      <img
+        src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_75,h_7,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
+        class="curve mx-2" />
+      <span class="font3 text-white mx-2 greeting1">BE OUR GUEST</span>
+      <img
+        src="https://static.wixstatic.com/media/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.png/v1/fill/w_75,h_7,al_c,q_85,usm_0.66_1.00_0.01/05e3dc_7c5c286e957d4aa6a00be967bebac2e3.webp"
+        class="curve mx-2" />
+    </div>
+    <div class="font2 text-white text-center greeting2">WELOME TO RIO</div>
+
+
+  </header>
+
+  <section class="container_wrapper ">
+    <!-- Form -->
+    <form id="bookNow" action=""
+      class="d-flex flex-column flex-md-row justify-content-between align-items-center m-5 gap-lg-5 gap-md-4"
+      id="bookNow">
+      <div class="">
+        <label for="checkIn">Check In:</label>
+        <input type="date" id="checkIn" />
+      </div>
+
+      <div class="">
+        <label for="checkOut">Check Out:</label>
+        <input type="date" id="checkOut" />
+      </div>
+
+
+      <div class="d-none d-md-flex">
+        <label for="adults">Adults:</label>
+        <input type="number" id="adults" />
+      </div>
+
+      <div class="d-none d-md-flex">
+        <label for="children">Children:</label>
+        <input type="number" id="children" />
+      </div>
+
+      <div class="d-flex flex-row d-md-none">
+        <div class="">
+          <label class="mx-auto" for="adults">Adults:</label>
+          <input class="mx-auto" type="number" id="adults" />
         </div>
-        <div class="welcome">WELOME TO RIO</div>
-      </section>
-    </header>
 
-    <section id="WhiteSection">
-      <form action="backend.php" class="center" id="book">
-        <div>
-          <label for="DO_CheckIn">Check In:</label>
-          <input type="date" id="Check_In" />
+        <div class=" ">
+          <label class="mx-auto" for="children">Children:</label>
+          <input class="mx-auto" type="number" id="children" />
+        </div>
+      </div>
+
+      <div class="">
+        <button class="btn " id="search">Search</button>
+      </div>
+    </form>
+
+    <div id="details">
+      <p class="font3 text-center h3">A Home in the Heart of the City</p>
+      <span class=" line my-4"></span>
+
+      <p class="font3 text-center mx-3 px-3 mx-md-5 px-md-5 mb-5">
+        Stay in a beautiful highrise in Ipanema just off the beach close to
+        many world-class cafes and restaurants. Enjoy Bossa Nova with a cold
+        beer!
+      </p>
+
+      <div class="sofaContainer d-flex flex-column flex-md-row w-100 ">
+        <div class="d-flex flex-column justify-content-center align-items-center ">
+          <p class="font3 h2 text-center text-white mt-4">Our <br> Apartment</p>
+          <span class="line mt-2"></span>
+        </div>
+        <img class="" src="images/sofa.jpg" alt="sofa" />
+      </div>
+
+      <div class="bedContainer d-flex flex-column flex-md-row w-100">
+        <img class="" src="images/bed_final-transformed.jpeg" alt="bed" />
+        <div class="font3 d-flex flex-column justify-content-center px-5">
+          The apartment is spacious with high ceilings, large windows, an open
+          balcony and a beautiful view of the beach. Stay cool with central
+          A/C and wind-down comfortably in the queen sized bedroom.
+          <!-- <br /><br /><br /><br /> -->
+          <a class="mt-4 " href="#">BOOK NOW!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container_wrapper p-0 mt-5">
+    <div id="location" class="locationContainer d-flex flex-column flex-md-row w-100">
+
+      <img id="Loc_img" src="images/Location.jpg" alt="" />
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <p class="font3 h2 text-center text-white mt-4">Location</p>
+        <span class="line mt-2"></span>
+      </div>
+
+    </div>
+    <p class="font3 d-flex flex-column justify-content-center p-5 m-3 p-md-5 m-md-3  text-md-center">
+      Conveniently located just opposite Leblon Beach in Ipanema, our
+      apartment will sweep you into the charm and excitements of Rio! Dine
+      at one of our neighborhood’s many world-renowned restaurants, enjoy
+      fresh-squeezed juices from one of the colourful stalls along the
+      beach, and don’t miss live bossy-nova show in one of the local bars.
+      <br />
+      <a class="mt-4" href="#">VIEW MAP </a>
+    </p>
+
+    <div id="review" class="reviewContainer d-flex d-flex flex-column flex-md-row w-100">
+      <img src="images/review.webp" alt="" />
+      <div class="font3 text-white d-flex flex-column justify-content-center p-5 ">
+        <p class="font3 h2 text-white m-0">About Camila & Tiago</p>
+        <span class="line mx-0 mb-4 mt-2"></span>
+        <div class="text-white">
+          Hi, my name is Camila and I’m a nutritionist from the south of
+          Brazil. I moved to the beautiful Ipanema neighborhood two years ago
+          with my husband, Tiago. We live in a homie highrise just off the
+          Leblon Beach, but in the summer we travel!
         </div>
 
-        <div>
-          <label for="DO_CheckOout">Check Out:</label>
-          <input type="date" id="Check_Out" />
-        </div>
+        <a class=" mt-4" href="#"> STAY WITH US</a>
+      </div>
+    </div>
+  </section>
 
-        <div>
-          <label for="Adults">Adults:</label>
-          <input type="number" id="adults" />
-        </div>
-
-        <div>
-          <label for="Children">Children:</label>
-          <input type="number" id="child" />
-        </div>
-
-        <div>
-          <button class="btn" id="search">Search</button>
-        </div>
+  <section
+    class="container_wrapper footer bg-transparent d-flex flex-column flex-md-row justify-content-between flex-lg-wrap">
+    <div class="font3">
+      <p>Contact Us</p>
+      <span class="line mx-0"> </span>
+      <p class="">Ask us anything! <br> We’re here to answer any questions you have.</p>
+      <a href="">Email: inforio@mysite.com</a>
+    </div>
+    <div class="font3">
+      <p>Follow Us</p>
+      <span class="line mx-0"></span>
+      <div class="flex socials">
+        <a target="_blank" href="https://twitter.com/DheerajManwani4"><i
+            class="fa-brands fa-twitter fa-2xl mx-1 ms-0 "></i></a>
+        <a target="_blank" href="https://www.instagram.com/dheerajmanwani2000/"><i
+            class="fa-brands fa-square-instagram fa-2xl mx-1 "></i></a>
+        <a target="_blank" href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2xl mx-1 "></i></a>
+      </div>
+    </div>
+    <div class="font3 flex flex-column">
+      <p> Subscribe for Updates & Offers</p>
+      <span class="line mx-0"></span>
+      <form action="">
+        <input class="font3" type="email" placeholder="Enter your email here*" />
       </form>
+      <button class="btn w-100 mt-2">Subscribe Now</button>
+    </div>
+  </section>
 
-      <section class="center" id="details">
-        <p id="d1" class="font3">A Home in the Heart of the City</p>
-        <span class="line"></span>
+  <footer>
 
-        <p id="d2" class="font3">
-          Stay in a beautiful highrise in Ipanema just off the beach close to
-          many world-class cafes and restaurants. Enjoy Bossa Nova with a cold
-          beer!
-        </p>
+  </footer>
 
+  <!-- <section id="WhiteSection_2">
+    <section class="center" id="Location">
+      <div>
+        <img id="Loc_img" src="images/Location.jpg" alt="" />
         <div>
-          <img id="sofa" src="images/sofa.jpg" alt="" />
-          <p id="d3" class="font3">Our Ap<span class="line">artme</span>nt</p>
-        </div>
-
-        <div>
-          <img id="bed" src="images/bed_final.jpg" alt="" />
-          <p id="d4" class="font3">
-            The apartment is spacious with high ceilings, large windows, an open
-            balcony and a beautiful view of the beach. Stay cool with central
-            A/C and wind-down comfortably in the queen sized bedroom. <br />
-            <br /><br /><br />
-            <a href="#">BOOK NOW!</a>
-          </p>
-        </div>
-      </section>
-    </section>
-
-    <section id="WhiteSection_2">
-      <section class="center" id="Location">
-        <div>
-          <img id="Loc_img" src="images/Location.jpg" alt="" />
-          <p class="font3">Lo<span class="line">cati</span>on</p>
-        </div>
-
-        <p class="font3">
-          Conveniently located just opposite Leblon Beach in Ipanema, our
-          apartment will sweep you into the charm and excitements of Rio! Dine
-          at one of our neighborhood’s many world-renowned restaurants, enjoy
-          fresh-squeezed juices from one of the colourful stalls along the
-          beach, and don’t miss live bossy-nova show in one of the local bars.
-          <br />
-          <a href="#">VIEW MAP </a>
-        </p>
-      </section>
-
-      <section class="center" id="review">
-        <img src="images/review.webp" alt="" />
-        <div class="font3">
-          <p class="font3"><span class="line">Abo</span>ut Camila & Tiago</p>
-
-          <div>
-            Hi, my name is Camila and I’m a nutritionist from the south of
-            Brazil. I moved to the beautiful Ipanema neighborhood two years ago
-            with my husband, Tiago. We live in a homie highrise just off the
-            Leblon Beach, but in the summer we travel!
-          </div>
-
-          <a href="#"> STAY WITH US</a>
-        </div>
-      </section>
-    </section>
-
-    <section id="end" class="flex">
-      <div id="end_item1" class="flex font3 end_items">
-        <h4>
-          <a href="#"><span class="line"> Cont</span>act Us</a>
-        </h4>
-        <div>Ask us anything! We’re here to answer any questions you have.</div>
-        <a href="">Email: info@mysite.com</a>
-        <div>© Test site created by Dheeraj.</div>
+        <p class="font3">Location</p>
+        <span class="line"></span></div>
       </div>
 
-      <div id="end_item2" class="flex font3 end_items">
-        <h4><span class="line"> Foll</span>ow Us</h4>
-        <div class="flex" id="logos">
-          <a href="https://twitter.com/DheerajManwani4"
-            ><img src="images/twitter.png"
-          /></a>
-          <a href="https://www.instagram.com/dheerajmanwani2000/"
-            ><img src="images/insta.png"
-          /></a>
-          <a href="https://www.youtube.com/user/dhruvrathee"
-            ><img src="images/you.png"
-          /></a>
-        </div>
-      </div>
-
-      <div id="end_item3" class="flex font3 end_items">
-        <h4><span class="line"> Subs</span>cribe for Updates & Offers</h4>
-        <form action="backend.php">
-          <input
-            class="font3"
-            type="email"
-            placeholder="Enter your email here*"
-          />
-        </form>
-        <button>Subscribe Now</button>
-      </div>
+      <p class="font3">
+        Conveniently located just opposite Leblon Beach in Ipanema, our
+        apartment will sweep you into the charm and excitements of Rio! Dine
+        at one of our neighborhood’s many world-renowned restaurants, enjoy
+        fresh-squeezed juices from one of the colourful stalls along the
+        beach, and don’t miss live bossy-nova show in one of the local bars.
+        <br />
+        <a href="#">VIEW MAP </a>
+      </p>
     </section>
 
-    <button class="chat-box center font3">
-      <img src="images/WProfile.png" />
-      <p>Lest's Chat</p>
-    </button>
+    <section class="center" id="review">
+      <img src="images/review.webp" alt="" />
+      <div class="font3">
+        <p class="font3"><span class="line">Abo</span>ut Camila & Tiago</p>
 
-    <script src="script.js"></script>
-  </body>
-  >
+        <div>
+          Hi, my name is Camila and I’m a nutritionist from the south of
+          Brazil. I moved to the beautiful Ipanema neighborhood two years ago
+          with my husband, Tiago. We live in a homie highrise just off the
+          Leblon Beach, but in the summer we travel!
+        </div>
+
+        <a href="#"> STAY WITH US</a>
+      </div>
+    </section>
+  </section> -->
+
+  <!-- <section id="end" class="flex">
+    <div id="end_item1" class="flex font3 end_items">
+      <h4>
+        <a href="#"><span class="line"> Cont</span>act Us</a>
+      </h4>
+      <div>Ask us anything! We’re here to answer any questions you have.</div>
+      <a href="">Email: info@mysite.com</a>
+      <div>© Test site created by Dheeraj.</div>
+    </div>
+
+    <div id="end_item2" class="flex font3 end_items">
+      <h4><span class="line"> Foll</span>ow Us</h4>
+      <div class="flex" id="logos">
+        <a href="https://twitter.com/DheerajManwani4"><img src="images/twitter.png" /></a>
+        <a href="https://www.instagram.com/dheerajmanwani2000/"><img src="images/insta.png" /></a>
+        <a href="https://www.youtube.com/user/dhruvrathee"><img src="images/you.png" /></a>
+      </div>
+    </div>
+
+    <div id="end_item3" class="flex font3 end_items">
+      <h4><span class="line"> Subs</span>cribe for Updates & Offers</h4>
+      <form action="backend.php">
+        <input class="font3" type="email" placeholder="Enter your email here*" />
+      </form>
+      <button>Subscribe Now</button>
+    </div>
+  </section> -->
+
+  <!-- <button class="chat-box center font3">
+    <img src="images/WProfile.png" />
+    <p>Lest's Chat</p>
+  </button> -->
+
+
+
+  <script src="https://kit.fontawesome.com/70eb98ab2d.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+
 </html>
